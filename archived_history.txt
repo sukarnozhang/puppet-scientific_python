@@ -1,0 +1,209 @@
+commit 5b3180ca6647e0a216c29746337e266f95a8c25d
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Fri Aug 25 16:49:52 2017 +0000
+
+    remove deprecated package
+
+commit 88c2a480eabd0e7a7acb49019538d1e1eb9041e7
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Dec 20 00:18:25 2016 +0000
+
+    update new package name for pip
+
+commit eec81e80b9a8933f280cc801cd2b266525418006
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Sep 27 15:43:03 2016 +0000
+
+    install pigz (parallel implementation of gzip)
+
+commit 3c14e89517991e63413a6cd91cd0f6fa445420ed
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Aug 9 23:42:41 2016 +0000
+
+    install pbzip2
+
+commit 2df152a8bcdfd26d0ff9dff3ab0f4d4e8e84a0dd
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Wed Jul 20 00:10:39 2016 +0000
+
+    fix package name
+
+commit f7d8e98e362be22ba349cc070465bca71c6d2fdc
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Mon May 9 15:01:38 2016 +0000
+
+    install docker python module
+
+commit d2a7492a2c0fd0cd99e239fd73efd40e65d4e24b
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Mon May 9 14:41:30 2016 +0000
+
+    install and configure docker
+
+commit 2d63acc0578fad7ff04cc0c5d7e86c6ef649fc77
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Wed Jan 27 15:16:17 2016 +0000
+
+    remove group write perm
+
+commit be2994e1bdf86b719d1e57b67935ca37c67f73a6
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Wed Jan 27 15:12:30 2016 +0000
+
+    open up perms on ops user
+
+commit 669c37491513f29989fd3ffb408c066d63f670ba
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Thu Jan 14 16:50:55 2016 +0000
+
+    add reqs for TkAgg
+
+commit 1ffeb7f79e254d95ff866a310ff7e9ec35d81cb7
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Fri Nov 6 20:24:59 2015 +0000
+
+    remove credential copying from centos user
+
+commit 86d881eb9c2d9da6fd162d6408fe8c40363c52b6
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Fri Nov 6 14:58:49 2015 +0000
+
+    change default user
+
+commit 7bafc4e0da7006c51f5868120a8b3ef9343a6f0f
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Thu Oct 1 15:59:55 2015 +0000
+
+    install screen
+
+commit 0286c066078aaf6e9ba28f838b9505edffc08434
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Wed Sep 30 02:18:11 2015 +0000
+
+    install dig command
+
+commit b7e91822d811a294d58d658cfef7fc03c12cbcd0
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Sep 29 23:25:51 2015 +0000
+
+    update
+
+commit 3f10bd019381535164cfe045ea7ad2f75d79c6dc
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Sep 29 15:41:55 2015 +0000
+
+    add timeouts
+
+commit a35b41c52c406a6b9a04714730ef32c9b57da5a3
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Sep 28 23:29:41 2015 +0000
+
+    add check
+
+commit 858af9b93985e33b72234e8216b44dba1e2add78
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Thu Sep 24 16:16:45 2015 +0000
+
+    install cartopy reqs
+
+commit 0086367a2abb127a607999c0b1526956339009ca
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Thu Sep 24 13:14:06 2015 +0000
+
+    install tsunami-udp; yum update automatically
+
+commit e069d2417814fef05325ecbd0f550edaf197654a
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Fri Sep 18 02:08:18 2015 +0000
+
+    set group
+
+commit 804da6684a3a4700b247db1cc20b6564501948e2
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Thu Sep 17 16:28:30 2015 +0000
+
+    fix push-button installation
+
+commit 233335c203a43cf1303064e6989cbf56b530ef83
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Thu Sep 17 15:27:38 2015 +0000
+
+    repo in hysds-org
+
+commit f0f7bfb6b41596f728359bb28b3ea62cfb859058
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Thu Sep 17 15:22:45 2015 +0000
+
+    set relocated repo
+
+commit 5ca32256d47623121a5fa6b13f75965bc7fd2788
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Wed Sep 16 14:32:33 2015 +0000
+
+    install openldap dev
+
+commit 142d113bed7a63712651efb0eeba33370497b1e8
+Author: gmanipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Sep 15 21:12:39 2015 +0000
+
+    detect if egg is already installed
+
+commit eda2121062de20a31cc02cc4b90ebc1920acae4c
+Author: Gerald Manipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Sep 15 03:35:40 2015 +0000
+
+    updated
+
+commit 3e8f81d99c86851d116aa089780c28f23dd7a522
+Author: Gerald Manipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Sep 15 01:59:32 2015 +0000
+
+    updated
+
+commit e19f6cc4aae8b438cfee2b95acaaa0e5503b885e
+Author: Gerald Manipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Sep 15 01:47:02 2015 +0000
+
+    updated
+
+commit 08e265ff5dbe91d8f1604516fb8cda6246e15277
+Author: Gerald Manipon <gmanipon@jpl.nasa.gov>
+Date:   Tue Sep 15 01:11:24 2015 +0000
+
+    install bsddb
+
+commit 5a99a46aa07f12a62eac06dd0fef745a5a555fb7
+Author: Gerald Manipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Sep 14 21:44:01 2015 +0000
+
+    updated
+
+commit d3f799e9c66618f6b1ee9de0a4dc3b5536f68ae8
+Author: Gerald Manipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Sep 14 20:36:29 2015 +0000
+
+    update
+
+commit a86f8ed4e88aa3d128a26518c2b7e72328079522
+Author: Gerald Manipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Sep 14 19:58:38 2015 +0000
+
+    update
+
+commit a32654fa5e63bbfedcb1eed29fa36ebf2e62e450
+Author: Gerald Manipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Sep 14 19:55:38 2015 +0000
+
+    update
+
+commit be0704159c9d28335f8a48428e4d711933d2507c
+Author: Gerald Manipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Sep 14 19:54:59 2015 +0000
+
+    update readme
+
+commit cd1c27f0aec9d48751580dd3fa8c29ee4167c762
+Author: Gerald Manipon <gmanipon@jpl.nasa.gov>
+Date:   Mon Sep 14 19:50:51 2015 +0000
+
+    initial import
