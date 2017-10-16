@@ -9,5 +9,5 @@ Installation
 ------------
 As _root_ run:
 ```
-# bash < <(curl -skL https://github.com/raw/hysds/puppet-scientific_python/master/install.sh)
+# bash < <(curl -skL https://github.com/hysds/puppet-scientific_python/raw/master/install.sh)
 ```

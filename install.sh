@@ -42,7 +42,7 @@ git_url="https://github.com"
 # export scientific_python puppet module
 ##########################################
 
-git_loc="${git_url}/hysds-org/puppet-scientific_python"
+git_loc="${git_url}/hysds/puppet-scientific_python"
 mod_dir=$mods_dir/scientific_python
 site_pp=$mod_dir/site.pp
 
