@@ -1,13 +1,15 @@
-scientific_python
-=================
+# scientific_python
 
 Puppet module to install all software needed to use 
 python in a scientific environment.
 
 
-Installation
-------------
+## Prerequisites
+Create a base CentOS7 image as described [https://github.com/hysds/hysds-framework/wiki/Puppet-Automation#create-a-base-centos-7-image-for-installation-of-all-hysds-component-instances](here).
+
+
+## Installation
 As _root_ run:
 ```
-# bash < <(curl -skL https://github.com/hysds/puppet-scientific_python/raw/master/install.sh)
+bash < <(curl -skL https://github.com/hysds/puppet-scientific_python/raw/master/install.sh)
 ```
