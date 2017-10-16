@@ -39,6 +39,18 @@ git_url="https://github.com"
 
 
 ##########################################
+# install puppetlab's stdlib module
+##########################################
+
+mod_dir=$mods_dir/stdlib
+
+# check that module is here; if not, export it
+if [ ! -d $mod_dir ]; then
+  $puppet_cmd module install puppetlabs-stdlib
+fi
+
+
+##########################################
 # export scientific_python puppet module
 ##########################################
 
