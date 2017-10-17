@@ -17,13 +17,12 @@ class scientific_python {
   user { $user:
     ensure     => present,
     gid        => $group,
-    groups     => [ "dockerroot" ],
+    groups     => [ "docker" ],
     shell      => '/bin/bash',
     home       => "/home/$user",
     managehome => true,
     require    => [
                    Group[$group],
-                   Package["docker"],
                   ],
   }
 
@@ -179,9 +178,6 @@ class scientific_python {
     'libxslt-python': ensure => installed;
     'SOAPpy': ensure => installed;
     'supervisor': ensure => installed;
-    'docker': ensure => installed;
-    'docker-registry': ensure => installed;
-    'docker-python': ensure => installed;
     'pbzip2': ensure => installed;
     'pigz': ensure => installed;
   }
@@ -314,40 +310,6 @@ class scientific_python {
     name    => '/etc/puppet/modules/scientific_python/files/processing-0.39-py2.7-linux-x86_64.egg',
     ensure  => installed,
     require => Easy_install['python-pyhdf'],
-  }
-
-
-  #####################################################
-  # start docker service
-  #####################################################
-
-  file { "/etc/sysconfig/docker":
-    ensure  => present,
-    content => template('scientific_python/docker'),
-    mode    => 0644,
-    require => Package['docker'],
-  }
-
-
-  file { "/etc/sysconfig/docker-storage-setup":
-    ensure  => present,
-    content => template('scientific_python/docker-storage-setup'),
-    mode    => 0644,
-    require => Package['docker'],
-  }
-
-
-  service { 'docker':
-    ensure     => running,
-    enable     => true,
-    hasrestart => true,
-    hasstatus  => true,
-    require    => [
-                   Package['docker'],
-                   Package['docker-registry'],
-                   File['/etc/sysconfig/docker'],
-                   File['/etc/sysconfig/docker-storage-setup'],
-                  ],
   }
 
 
