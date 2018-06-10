@@ -9,6 +9,7 @@ class scientific_python {
   #####################################################
   $user = 'ops'
   $group = 'ops'
+  $docker_group = 'docker'
 
   group { $group:
     ensure     => present,
@@ -17,13 +18,13 @@ class scientific_python {
   user { $user:
     ensure     => present,
     gid        => $group,
-    groups     => [ "dockerroot" ],
+    groups     => [ $docker_group ],
     shell      => '/bin/bash',
     home       => "/home/$user",
     managehome => true,
     require    => [
                    Group[$group],
-                   Package["docker"],
+                   Package["docker-ce"],
                   ],
   }
 
@@ -179,9 +180,7 @@ class scientific_python {
     'libxslt-python': ensure => installed;
     'SOAPpy': ensure => installed;
     'supervisor': ensure => installed;
-    'docker': ensure => installed;
-    'docker-registry': ensure => installed;
-    'docker-python': ensure => installed;
+    'docker-ce': ensure => installed;
     'pbzip2': ensure => installed;
     'pigz': ensure => installed;
   }
@@ -321,32 +320,13 @@ class scientific_python {
   # start docker service
   #####################################################
 
-  file { "/etc/sysconfig/docker":
-    ensure  => present,
-    content => template('scientific_python/docker'),
-    mode    => 0644,
-    require => Package['docker'],
-  }
-
-
-  file { "/etc/sysconfig/docker-storage-setup":
-    ensure  => present,
-    content => template('scientific_python/docker-storage-setup'),
-    mode    => 0644,
-    require => Package['docker'],
-  }
-
-
   service { 'docker':
     ensure     => running,
     enable     => true,
     hasrestart => true,
     hasstatus  => true,
     require    => [
-                   Package['docker'],
-                   Package['docker-registry'],
-                   File['/etc/sysconfig/docker'],
-                   File['/etc/sysconfig/docker-storage-setup'],
+                   Package['docker-ce'],
                   ],
   }
 
