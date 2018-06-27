@@ -9,6 +9,7 @@ class scientific_python {
   #####################################################
   $user = 'ops'
   $group = 'ops'
+  $docker_group = 'docker'
 
   group { $group:
     ensure     => present,
@@ -17,7 +18,7 @@ class scientific_python {
   user { $user:
     ensure     => present,
     gid        => $group,
-    groups     => [ "docker" ],
+    groups     => [ $docker_group ],
     shell      => '/bin/bash',
     home       => "/home/$user",
     managehome => true,
