@@ -181,6 +181,10 @@ class scientific_python {
     'supervisor': ensure => installed;
     'pbzip2': ensure => installed;
     'pigz': ensure => installed;
+    'docker-ce': ensure => installed;
+    'yum-utils': ensure => installed;
+    'device-mapper-persistent-data': ensure => installed;
+    'lvm2': ensure => installed;
   }
 
 
