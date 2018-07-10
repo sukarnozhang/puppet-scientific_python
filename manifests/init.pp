@@ -180,9 +180,12 @@ class scientific_python {
     'libxslt-python': ensure => installed;
     'SOAPpy': ensure => installed;
     'supervisor': ensure => installed;
-    'docker-ce': ensure => installed;
     'pbzip2': ensure => installed;
     'pigz': ensure => installed;
+    'docker-ce': ensure => installed;
+    'yum-utils': ensure => installed;
+    'device-mapper-persistent-data': ensure => installed;
+    'lvm2': ensure => installed;
   }
 
 
