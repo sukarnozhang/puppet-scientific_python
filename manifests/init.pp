@@ -112,7 +112,7 @@ class scientific_python {
     'wget': ensure => installed;
     'vim-enhanced': ensure => installed;
     'nscd': ensure => installed;
-    'ntp': ensure => installed;
+    'chrony': ensure => installed;
     'git': ensure => installed;
     'subversion': ensure => installed;
     'python': ensure => present;
