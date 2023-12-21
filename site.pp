@@ -15,9 +15,11 @@ class yum {
 
 class docker {
    yumrepo { "docker-ce-stable":
-      baseurl => "https://download.docker.com/linux/centos/7/$architecture/stable",
-      enabled => 1,
-      gpgcheck => 0
+      name=Docker CE Stable - $basearch,
+      baseurl=https://download.docker.com/linux/centos/$releasever/$basearch/stable,
+      enabled=1,
+      gpgcheck=1,
+      gpgkey=https://download.docker.com/linux/centos/gpg
    }
 }
 
